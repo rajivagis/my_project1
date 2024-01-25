@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    background-color: rgba(0, 20, 0, 0.2);
+}
+/* old */
+/* #navbar{
+    height: 60px;
+    background-color:#0f1111;
+}
+button{
+    background-color: #f08804;
+}
+
+#logo{
+    color: #f08804;
+    font-size: 20px;
+}
+li{
+    display: inline;
+    
+}
+
+a{
+    margin-right: 100px;
+    text-decoration: none;
+    color: #fff;
+    transition-property: all;
+    transition-duration: 2s;
+    text-transform: uppercase;
+    
+}
+
+a:hover{
+    background-color: rgb(232, 6, 6);
+    color: rgb(248, 250, 248);
+    font-size: 20px;
+}
+.outer{
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+    /* background-color: cornflowerblue; */
+    /* background-image: url(../img/raj.jpg);
+    background-position: center;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#msg{
+    margin-left: 22px;
+    color: #fff;
+} */ 
+
+/* new */
+
+#header{
+    display: flex;          
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.9);
+    z-index: 999;
+    position: sticky;
+    top: 0;         left: 0;
+}
+
+#navbar{
+    display: flex;  
+    align-items: center; 
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;      
+    padding: 0 20px; 
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;          
+    font-size: 18px;
+    font-weight: 600;           
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    text-transform: uppercase;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    /* width: 60%; */
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    transition: 0.5s ease;
+}
+
+/* Hero */
+#hero{
+    background-image: url("../img/exam2.jpg");
+    height: 90vh;          
+    width: 100%;
+    background-size: cover;
+    background-position: top 20% right 0;
+    padding: 0 80px;     
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    justify-content: center;
+    color: red;
+}
+#hero h4{
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+#hero h1{
+    color: hsl(0, 98%, 50%);
+}
+#hero p{
+    font-size: 25px;
+}
+#hero button{
+    background-image: url("../img/raj5.JPG");
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    font-weight: 700;
+    font-size: 15px;
+}
+ 
+#hero button a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    
+}
+
+/* Footer */
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#feature .fe-box{
+    width: 180px;       
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px; 
+    margin: 15px 0;
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.2);
+}
+
+#feature .fe-box img{
+    width: 100%;    margin-bottom: 10px; height: 100px;
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+    font-size: 15px;
+    
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: #cdebbc;
+}
